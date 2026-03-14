@@ -18,7 +18,6 @@ export default function About() {
         </motion.h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* LADO DE LA IMAGEN (Logo user.svg) */}
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -28,21 +27,18 @@ export default function About() {
           >
             <motion.div 
               className="relative"
-              /* Animación de flotación suave */
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
               <img 
-                className="w-72 h-72 md:w-80 md:h-80 object-contain" 
+                className="w-72 h-72 md:w-80 md:h-80 object-contain dark:invert transition-all duration-500" 
                 src={userLogo}
                 alt="Richard NB Data Analyst" 
               />
-              {/* Resplandor sutil detrás del logo para dar profundidad en modo oscuro */}
               <div className="absolute inset-0 bg-blue-500/10 dark:bg-blue-500/5 blur-3xl -z-10 rounded-full"></div>
             </motion.div>
           </motion.div>
-          
-          {/* LADO DEL TEXTO */}
+
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

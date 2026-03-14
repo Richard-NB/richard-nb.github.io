@@ -57,16 +57,10 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* --- OLA CORREGIDA --- */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
         <svg viewBox="0 0 1440 160" preserveAspectRatio="none" className="w-full h-[60px] md:h-[120px]">
           <path 
             d="M0,32L80,37.3C160,43,320,53,480,58.7C640,64,800,64,960,58.7C1120,53,1280,43,1360,37.3L1440,32V160H0Z" 
-            /* EXPLICACIÓN DE LA CORRECCIÓN:
-               - fill-white: Se une con el fondo blanco de About en modo luz.
-               - dark:fill-slate-900: Se une con el fondo Slate-900 de About en modo oscuro.
-               Esto crea el contraste contra el fondo Slate-950 del Hero.
-            */
             className="fill-white dark:fill-slate-900 transition-colors duration-500"
           />
         </svg>

@@ -55,7 +55,7 @@ export default function Contact() {
                   name="name"  // Coincide con el código de EmailJS
                   required
                   className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
-                  placeholder="Juan Perez"
+                  placeholder="Ej: Juan Pérez"
                 />
               </div>
               <div>
@@ -65,7 +65,7 @@ export default function Contact() {
                   name="email" // Coincide con el código de EmailJS
                   required
                   className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
-                  placeholder="user@email.com"
+                  placeholder="tu@email.com"
                 />
               </div>
             </div>
@@ -113,9 +113,9 @@ export default function Contact() {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">¡Enviado con éxito!</h3>
               <p className="text-slate-600 dark:text-slate-400 mb-8">
-          Gracias <span className="text-blue-600 dark:text-blue-400 font-bold">{userName}</span>, 
-          me pondré en contacto contigo lo antes posible.
-        </p>
+                Gracias <span className="text-blue-600 dark:text-blue-400 font-bold">{userName}</span>, 
+                me pondré en contacto contigo lo antes posible.
+              </p>
               <button 
                 onClick={() => setShowModal(false)}
                 className="w-full bg-slate-900 dark:bg-sky-600 text-white font-bold py-3 rounded-xl hover:scale-105 transition-transform"

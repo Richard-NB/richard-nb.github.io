@@ -36,13 +36,13 @@ export default function Footer() {
               Analista de Datos especializado en automatización y arquitectura de información. Transformando flujos de datos en decisiones estratégicas.
             </p>
             <div className="flex justify-center md:justify-start gap-5 pt-2">
-              <a href="#" className="text-blue-100/40 hover:text-white transition-all hover:-translate-y-1">
+              <a href="https://www.linkedin.com/in/richard-navarro-bonifacio-526936201/" className="text-blue-100/40 hover:text-white transition-all hover:-translate-y-1">
                 <i className="fa-brands fa-linkedin-in text-xl"></i>
               </a>
-              <a href="#" className="text-blue-100/40 hover:text-white transition-all hover:-translate-y-1">
-                <i className="fa-brands fa-github text-xl"></i>
+              <a href="https://www.facebook.com/richard.navarro.75054689/" className="text-blue-100/40 hover:text-white transition-all hover:-translate-y-1">
+                <i className="fa-brands fa-facebook text-xl"></i>
               </a>
-              <a href="#" className="text-blue-100/40 hover:text-white transition-all hover:-translate-y-1">
+              <a href="https://www.instagram.com/richard.nb.2001/" className="text-blue-100/40 hover:text-white transition-all hover:-translate-y-1">
                 <i className="fa-brands fa-instagram text-xl"></i>
               </a>
             </div>

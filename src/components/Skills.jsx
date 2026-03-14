@@ -80,9 +80,10 @@ export default function Skills() {
                 <img 
                   src={skill.img} 
                   alt={skill.nombre} 
-                  className="h-12 w-12 object-contain transition-all duration-300"
+                  className="skill-icon h-12 w-12 object-contain transition-all duration-300"
                 />
               </div>
+              
 
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                 {skill.nombre}
@@ -97,17 +98,18 @@ export default function Skills() {
 
       {/* Se eliminó el gradiente inferior que iba hacia Projects */}
 
+  
       <style>{`
-        img {
-          filter: brightness(0) saturate(100%) invert(25%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
-        }
-        .dark img {
-          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-        }
-        .group:hover img {
-          filter: brightness(0) saturate(100%) invert(40%) sepia(98%) saturate(1729%) hue-rotate(201deg) brightness(98%) contrast(101%) !important;
-        }
-      `}</style>
+  .skill-icon {
+    filter: brightness(0) saturate(100%) invert(25%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
+  }
+  .dark .skill-icon {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  }
+  .group:hover .skill-icon {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(98%) saturate(1729%) hue-rotate(201deg) brightness(98%) contrast(101%) !important;
+  }
+`}</style>
     </section>
   );
 }

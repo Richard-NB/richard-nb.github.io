@@ -35,7 +35,7 @@ export default function Navbar({ toggleTheme, theme }) {
         <div className="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center text-2xl font-black">
-            <a href="#" className={`flex items-center gap-2 transition-colors duration-500 ${
+            <a href="https://richard-nb.github.io" className={`flex items-center gap-2 transition-colors duration-500 ${
               scrolled ? "text-blue-700 dark:text-blue-500" : "text-white"
             }`}>
               <span>&lt;</span>
