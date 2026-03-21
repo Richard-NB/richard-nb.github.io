@@ -46,8 +46,9 @@ export default function About() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="space-y-6"
           >
+
             <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
-              Analista de Datos con alma de programador enfocado en la <strong className="text-blue-600 dark:text-blue-400 font-bold">automatización, arquitectura de información e inteligencia artificial</strong>. Especialista en transformar datos complejos en decisiones estratégicas mediante el uso de <strong className="text-blue-600 dark:text-blue-400 font-bold">Python, SQL y Power BI (DAX)</strong>.
+              Backend Developer con enfoque en la <strong className="text-blue-600 dark:text-blue-400 font-bold">automatización, arquitectura de información e inteligencia artificial</strong>. Especialista en desarrollar herramientas que <strong className="text-blue-600 dark:text-blue-400 font-bold">optimizan flujos de trabajo</strong>, transformando datos brutos en estrategias accionables.
             </p>
             
             <p className="text-slate-600 dark:text-slate-400 font-medium">

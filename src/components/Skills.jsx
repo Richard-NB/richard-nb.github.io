@@ -1,31 +1,41 @@
 import { motion } from 'framer-motion';
 import excelIcon from '../assets/1-ms_excel.svg';
-import powerBiIcon from '../assets/2-power_bi.svg';
-import accessIcon from '../assets/3-ms_access.svg';
+import htmlIcon from '../assets/13-html.svg';
+import cssIcon from '../assets/2-css.svg';
+import javascriptIcon from '../assets/3-javascript.svg';
+import reactIcon from '../assets/4-react.svg';
+import laravelIcon from '../assets/5-laravel.svg';
+import railsIcon from '../assets/6-rails.svg';
 import pythonIcon from '../assets/4-python.svg';
 import batchIcon from '../assets/5-batch_script.svg';
 import sqlServerIcon from '../assets/6-sql_server.svg';
-import googleAnalyticsIcon from '../assets/7-google_analytics.svg';
-import jsonIcon from '../assets/8-json.svg';
 import awsIcon from '../assets/10-aws_cloud.svg';
 import gitIcon from '../assets/11-git.svg';
+import n8nIcon from '../assets/7-n8n.svg';
+import googleAnalyticsIcon from '../assets/7-google_analytics.svg';
+import jsonIcon from '../assets/8-json.svg';
+
 import linuxIcon from '../assets/12-linux.svg';
 import webIcon from '../assets/16-web.svg';
 
 export default function Skills() {
   const habilidades = [
-    { nombre: "Microsoft Excel", img: excelIcon, descripcion: "Análisis avanzado, Power Pivot y modelado de datos complejos." },
-    { nombre: "Power BI", img: powerBiIcon, descripcion: "Visualización de datos y creación de dashboards interactivos." },
-    { nombre: "SQL / NoSQL", img: sqlServerIcon, descripcion: "Diseño y optimización de bases de datos para grandes volúmenes." },
-    { nombre: "Python", img: pythonIcon, descripcion: "Análisis estadístico y limpieza de datos con Pandas y Numpy." },
-    { nombre: "AWS Cloud", img: awsIcon, descripcion: "Almacenamiento y procesamiento de datos en la nube." },
-    { nombre: "Google Analytics", img: googleAnalyticsIcon, descripcion: "Interpretación de métricas web para decisiones estratégicas." },
-    { nombre: "Linux", img: linuxIcon, descripcion: "Administración de sistemas y manejo avanzado de terminal." },
-    { nombre: "Batch Script", img: batchIcon, descripcion: "Automatización de procesos y flujos de trabajo en Windows." },
-    { nombre: "Git / Github", img: gitIcon, descripcion: "Control de versiones y colaboración en proyectos de datos." },
-    { nombre: "Microsoft Access", img: accessIcon, descripcion: "Gestión de bases de datos locales y formularios." },
-    { nombre: "JSON / XML", img: jsonIcon, descripcion: "Manipulación de datos estructurados para integración de sistemas." },
-    { nombre: "Desarrollo Web", img: webIcon, descripcion: "Interfaces personalizadas para visualización de datos web." }
+    { nombre: "Laravel", img: laravelIcon, descripcion: "Desarrollo de aplicaciones robustas y sistemas de gestión a medida." },
+    { nombre: "Ruby on Rails", img: railsIcon, descripcion: "Construcción de backends escalables y lógica de negocio eficiente." },
+    { nombre: "Python", img: pythonIcon, descripcion: "Scripts de automatización, web scraping y procesamiento de datos." },
+    { nombre: "n8n", img: n8nIcon, descripcion: "Automatización de flujos de trabajo e integración de servicios digitales." },
+    { nombre: "SQL / NoSQL", img: sqlServerIcon, descripcion: "Diseño, modelado y optimización de bases de datos de alto rendimiento." },
+    { nombre: "React", img: reactIcon, descripcion: "Creación de interfaces dinámicas y dashboards para visualización de datos." },
+    { nombre: "Javascript", img: javascriptIcon, descripcion: "Desarrollo de lógica avanzada y funcionalidades interactivas web." },
+    { nombre: "AWS Cloud", img: awsIcon, descripcion: "Despliegue y administración de soluciones en infraestructura nube." },
+    { nombre: "Linux", img: linuxIcon, descripcion: "Manejo de servidores, terminal avanzada y entornos de despliegue." },
+    { nombre: "Git / Github", img: gitIcon, descripcion: "Control de versiones y gestión colaborativa de repositorios de código." },
+    { nombre: "JSON / XML", img: jsonIcon, descripcion: "Estructuración e intercambio de datos para integración de sistemas." },
+    { nombre: "Batch Script", img: batchIcon, descripcion: "Automatización de tareas repetitivas y scripts de sistema en Windows." },
+    { nombre: "Microsoft Excel", img: excelIcon, descripcion: "Análisis de datos avanzado, Power Pivot y automatización con macros." },
+    { nombre: "Google Analytics", img: googleAnalyticsIcon, descripcion: "Seguimiento de métricas y análisis de comportamiento de usuarios." },
+    { nombre: "HTML", img: htmlIcon, descripcion: "Estructuración de interfaces web modernas, limpias y accesibles." },
+    { nombre: "CSS", img: cssIcon, descripcion: "Estilizado responsivo y diseño visual con frameworks modernos." }
   ];
 
   const containerVariants = {

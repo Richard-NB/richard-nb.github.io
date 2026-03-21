@@ -23,9 +23,9 @@ export default function Hero() {
                   .typeString('Mi nombre es <span class="text-blue-300">Richard Navarro</span>')
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString('Analizo datos para crear...')
+                  .typeString('Especialista en optimizar...')
                   .pauseFor(1000)
-                  .typeString('<br/><span class="text-blue-300">decisiones clave</span>')
+                  .typeString('<br/><span class="text-blue-300">flujos de trabajo</span>')
                   .pauseFor(2500)
                   .start();
               }}
@@ -39,7 +39,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-lg md:text-xl text-blue-50/80 dark:text-slate-400 mb-10 max-w-2xl mx-auto font-medium"
         >
-          Especialista en convertir flujos de datos complejos en estrategias accionables.
+          Desarrollo herramientas escalables diseñadas para <span className="text-blue-300 font-semibold">automatizar procesos complejos</span> y maximizar el valor de tus flujos de datos.
         </motion.p>
 
         <motion.div 

@@ -33,7 +33,7 @@ export default function Footer() {
               Richard Navarro
             </h2>
             <p className="text-blue-100/60 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
-              Analista de Datos especializado en automatización y arquitectura de información. Transformando flujos de datos en decisiones estratégicas.
+              Desarrollador Backend especializado en crear herramientas para optimizar flujos de trabajo y automatizar decisiones estratégicas.
             </p>
             <div className="flex justify-center md:justify-start gap-5 pt-2">
               <a href="https://www.linkedin.com/in/richard-navarro-bonifacio-526936201/" className="text-blue-100/40 hover:text-white transition-all hover:-translate-y-1">
@@ -54,10 +54,18 @@ export default function Footer() {
             Especialidades
             </h3>
             <nav className="flex flex-col space-y-2 text-sm text-blue-100/60 font-medium">
-              <a href="#about" className="hover:text-blue-300 transition-colors w-fit mx-auto md:mx-0">Desarrollo de Dashboards</a>
-              <a href="#skill" className="hover:text-blue-300 transition-colors w-fit mx-auto md:mx-0">Automatización de procesos</a>
-              <a href="#project" className="hover:text-blue-300 transition-colors w-fit mx-auto md:mx-0">Modelado de Datos (DAX/SQL)</a>
-              <a href="#contact" className="hover:text-blue-300 transition-colors w-fit mx-auto md:mx-0">Desarrollo web</a>
+              <a href="#about" className="hover:text-blue-300 transition-colors w-fit mx-auto md:mx-0">
+                Desarrollo de Software
+              </a>
+              <a href="#skill" className="hover:text-blue-300 transition-colors w-fit mx-auto md:mx-0">
+                Automatización de Flujos
+              </a>
+              <a href="#project" className="hover:text-blue-300 transition-colors w-fit mx-auto md:mx-0">
+                Ingeniería de Datos (SQL/ETL)
+              </a>
+              <a href="#contact" className="hover:text-blue-300 transition-colors w-fit mx-auto md:mx-0">
+                Soluciones a Medida
+              </a>
             </nav>
           </div>
 
