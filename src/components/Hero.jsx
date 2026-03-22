@@ -46,7 +46,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-lg md:text-xl text-blue-50/80 dark:text-slate-400 mb-10 max-w-2xl mx-auto font-medium"
         >
-          Diseño arquitecturas de datos y <span className="text-blue-300 font-semibold">herramientas de automatización</span> para transformar flujos complejos en procesos eficientes.
+          Diseño flujos de datos y <span className="text-blue-300 font-semibold">herramientas de automatización</span> para transformar procesos complejos en soluciones eficientes.
         </motion.p>
 
         <motion.div 
@@ -68,9 +68,9 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
         <svg viewBox="0 0 1440 160" preserveAspectRatio="none" className="w-full h-[60px] md:h-[120px]">
           <path 
-            d="M0,32L80,37.3C160,43,320,53,480,58.7C640,64,800,64,960,58.7C1120,53,1280,43,1360,37.3L1440,32V160H0Z" 
-            className="fill-white dark:fill-slate-950 transition-colors duration-500"
-          />
+  d="M0,32L80,37.3C160,43,320,53,480,58.7C640,64,800,64,960,58.7C1120,53,1280,43,1360,37.3L1440,32V160H0Z" 
+  className="fill-white dark:fill-slate-900 transition-colors duration-500" 
+/>
         </svg>
       </div>
     </header>
