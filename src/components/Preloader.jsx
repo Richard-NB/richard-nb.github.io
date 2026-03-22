@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+// 1. Importa tu imagen local
+import codeIcon from '../assets/code.svg'; 
 
 export default function Preloader() {
   return (
@@ -8,7 +10,7 @@ export default function Preloader() {
       transition={{ duration: 0.8, ease: "easeInOut" }}
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-slate-900"
     >
-      {/* Logo o Icono Central */}
+      {/* 2. Reemplazo del icono por la imagen animada */}
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -17,21 +19,27 @@ export default function Preloader() {
           repeat: Infinity, 
           repeatType: "reverse" 
         }}
-        className="text-sky-400 text-6xl mb-8"
+        className="mb-8" // Quitamos text-sky-400 y text-6xl, ya no son necesarios
       >
-        <i className="fa-solid fa-chart-line"></i>
+        {/* Usamos una etiqueta img con clases de Tailwind para controlar el tamaño */}
+        <img 
+          src={codeIcon} 
+          alt="Cargando..." 
+          className="h-20 w-20 object-contain" // Ajusta h-20 w-20 según el tamaño que desees
+        />
       </motion.div>
 
-      {/* Texto de Carga */}
+      {/* 3. Texto de Carga Actualizado y Resumido */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        transition={{ delay: 0.2 }}
         className="text-white tracking-[0.3em] font-light text-sm mb-4"
       >
-        PROCESANDO DATOS
+        CARGANDO DATOS
       </motion.div>
 
-      {/* Barra de progreso animada */}
+      {/* Barra de progreso animada (sin cambios) */}
       <div className="w-48 h-[2px] bg-slate-800 rounded-full overflow-hidden">
         <motion.div 
           initial={{ x: "-100%" }}

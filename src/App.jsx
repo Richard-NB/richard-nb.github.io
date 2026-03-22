@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { HelmetProvider } from "react-helmet-async"; // Solo el Provider, Helmet ya está en Seo.jsx
+import { HelmetProvider } from "react-helmet-async";
 import Seo from "./components/Seo";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -11,9 +11,25 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 
+// 1. Importamos el icono desde la ruta que indicaste
+import codeIcon from "./assets/code.ico";
+
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
   const [loading, setLoading] = useState(true);
+
+  // Lógica para forzar el Favicon desde assets
+  useEffect(() => {
+    const link = document.querySelector("link[rel~='icon']");
+    if (link) {
+      link.href = codeIcon;
+    } else {
+      const newLink = document.createElement('link');
+      newLink.rel = 'icon';
+      newLink.href = codeIcon;
+      document.head.appendChild(newLink);
+    }
+  }, []);
 
   // Lógica del Tema (Oscuro/Claro)
   useEffect(() => {
@@ -39,7 +55,6 @@ function App() {
     <HelmetProvider>
       <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-500">
         
-        {/* Componente SEO centralizado */}
         <Seo />
 
         <AnimatePresence mode="wait">
